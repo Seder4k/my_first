@@ -3,8 +3,8 @@ from PyQt5.QtWidgets import QMainWindow
 from my_first_Qt import Ui_MainWindow
 from random import randint 
 class Widget(QMainWindow):
-    def init(self):
-        super().init()
+    def __init__(self):
+        super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.ui.pushButton.clicked.connect(self.generate)
